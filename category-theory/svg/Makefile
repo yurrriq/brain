@@ -1,5 +1,5 @@
 %.svg: ../tex/%.pdf
-	@ pdf2svg $< $@
+	@ pdftocairo -svg $< $@
 
 ../tex/%.pdf: ../tex/%.tex
 	@ cd $(@D); pdflatex $<

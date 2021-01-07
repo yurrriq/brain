@@ -6,7 +6,7 @@ pkgs.mkShell {
     niv
     nixpkgs-fmt
     obsidian
-    pdf2svg
+    poppler_utils
     python3Packages.pre-commit
     (
       texlive.combine {
