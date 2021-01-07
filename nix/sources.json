@@ -22,5 +22,12 @@
         "type": "tarball",
         "url": "https://github.com/NixOS/nixpkgs/archive/3e635c6f6eabb435c60e1c7b0de6e217ac28b2b7.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "obsidian": {
+        "sha256": "0kq948m8v7yhrdnmnjb1qz116jvadb72s3x4c2jrifypg5rrbw99",
+        "type": "file",
+        "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v0.10.6/obsidian-0.10.6.asar.gz",
+        "url_template": "https://github.com/obsidianmd/obsidian-releases/releases/download/v<version>/obsidian-<version>.asar.gz",
+        "version": "0.10.6"
     }
 }
