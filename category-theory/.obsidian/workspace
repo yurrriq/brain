@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "category.md",
+            "file": "associativity.md",
             "mode": "preview"
           }
         },
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "category.md",
+                "file": "associativity.md",
                 "mode": "source"
               }
             },
@@ -38,25 +38,25 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "category.md",
+                "file": "associativity.md",
                 "options": {
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 3,
                   "localBacklinks": true,
                   "localForelinks": true,
-                  "localInterlinks": false,
+                  "localInterlinks": true,
                   "showTags": false,
-                  "showAttachments": false,
+                  "showAttachments": true,
                   "hideUnresolved": false,
-                  "showArrow": false,
+                  "showArrow": true,
                   "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
+                  "nodeSizeMultiplier": 1.03034427542034,
+                  "lineSizeMultiplier": 5,
                   "centerStrength": 0.518713248970312,
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 2.7884923526904113
+                  "scale": 1.407526224289018
                 }
               }
             },
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "category.md",
+                "file": "associativity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,15 +137,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "associativity.md",
     "category.md",
     "morphism.md",
-    "associativity.md",
+    "svg/category-associativity.svg",
     "composition.md",
     "map.md",
     "mathematical object.md",
     "object.md",
     "Category Theory.md",
-    "Composition.md",
-    "Untitled.md"
+    "Composition.md"
   ]
 }

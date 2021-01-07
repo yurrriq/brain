@@ -1,0 +1,12 @@
+\documentclass[crop,tikz,convert]{standalone}
+\usepackage{standalone}
+\standaloneconfig{convert={convertexe={convert}}}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+\pagecolor{white}
+\begin{document}
+\begin{tikzcd}
+  A\drar[swap]{gf}\rar{f} & B\drar{hg}\dar{g} \\
+  & C\rar{h} & D
+\end{tikzcd}
+\end{document}
