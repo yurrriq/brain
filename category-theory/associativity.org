@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       4b5ec273-b6b0-4b78-b3a3-7e6560a8f7fa
+:END:
+#+title: associativity
+
+Given [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphisms]] $f~:~A~\to~B$, $g~:~B~\to~C$, and $h~:~C~\to~D$, the following [[id:68d42592-8a8e-4a19-8479-bd6c5414ad72][diagram]][fn:1] commutes.
+
+#+CAPTION: A commutative diagram of associativity
+[[./svg/category-associativity.svg]]
+
+[fn:1] Generated with [[https://www.ctan.org/pkg/tikz-cd][TiKZ]] and the [[https://poppler.freedesktop.org/][Poppler]] tool =pdftocairo=.

@@ -22,6 +22,9 @@
             emacsWithPackagesFromUsePackage {
               alwaysEnsure = true;
               config = ./emacs.el;
+              extraEmacsPackages = epkgs: [
+                epkgs.org-roam-ui
+              ];
             }
           )
           gitAndTools.pre-commit
@@ -32,6 +35,7 @@
             texlive.combine {
               inherit (texlive) scheme-small
                 currfile
+                dvipng
                 filemod
                 latexmk
                 standalone

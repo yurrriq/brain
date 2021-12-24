@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       68d42592-8a8e-4a19-8479-bd6c5414ad72
+:ROAM_ALIASES: "commutative diagram"
+:END:
+#+title: diagram
+
+TBW

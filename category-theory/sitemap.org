@@ -1,0 +1,13 @@
+#+OPTIONS: ^:nil author:nil html-postamble:nil
+#+TITLE: Category Theory
+
+- [[file:associativity.org][associativity]]
+- [[file:category.org][category]]
+- [[file:codomain.org][codomain]]
+- [[file:diagram.org][diagram]]
+- [[file:domain.org][domain]]
+- [[file:endofunctor.org][endofunctor]]
+- [[file:functor.org][functor]]
+- [[file:magma.org][magma]]
+- [[file:morphism.org][morphism]]
+file:sitemap.svg

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       459a0131-65a1-4a2f-966b-a93556548037
+:END:
+#+title: codomain
+
+TBW

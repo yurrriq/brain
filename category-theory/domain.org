@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       15583214-dd47-426b-b1eb-86d92bfa565b
+:END:
+#+title: domain
+
+TBW

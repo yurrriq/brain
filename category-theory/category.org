@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       06fc0ae5-533c-4b99-be3a-26b98dddae39
+:END:
+#+title: category
+
+A(n abstract) *category* $\mathcal{C}$ consists of:
+- a collection of objects \(X,Y,Z,...\)
+- a collection of [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphisms]] \(f,g,h,...\)
+
+such that:
+- each object has an identity [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphism]] $1_X : X \to X$
+- composition is associative, e.g.:
+  $$f : X \to Y, \quad g : Y \to Z, \quad h : Z \to W \qquad \leadsto \qquad hgf : X \to W$$
+
+satisfying the following axioms:
+- *Identity*: For any $f : X \to Y$, the composites $1_Xf$ and $f1_X$ are both equal to $f$
+- [[id:4b5ec273-b6b0-4b78-b3a3-7e6560a8f7fa][*Associativity*]]: For all $f,g,h$, the composites $h(gf)$ and $(hg)f$ are equal and denoted $hgf$

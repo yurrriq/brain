@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       fca06db8-da2d-434a-888d-16190002dbf1
+:ROAM_ALIASES: arrow map
+:END:
+#+title: morphism
+
+A *morphism* is a structure-preserving *map* (or *arrow*) between objects of the
+same type.
+
+For example, $f : X \to Y$ is a *morphism* with [[id:15583214-dd47-426b-b1eb-86d92bfa565b][domain]] (or *source*) $X$ and
+[[id:459a0131-65a1-4a2f-966b-a93556548037][codomain]] (or *target*) $Y$.
