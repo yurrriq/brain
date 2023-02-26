@@ -2,6 +2,13 @@
   description = "Stuff I know";
 
   inputs = {
+    deadnix = {
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        utils.follows = "flake-utils";
+      };
+      url = "github:astro/deadnix";
+    };
     emacs-overlay = {
       inputs = {
         flake-utils.follows = "flake-utils";
@@ -18,6 +25,7 @@
       let
         pkgs = import nixpkgs {
           overlays = [
+            inputs.deadnix.overlays.default
             emacs-overlay.overlay
           ];
           inherit system;
@@ -26,6 +34,7 @@
       {
         devShells.default = with pkgs; mkShell {
           buildInputs = [
+            deadnix
             (
               emacsWithPackagesFromUsePackage {
                 alwaysEnsure = true;
