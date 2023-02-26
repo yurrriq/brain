@@ -12,7 +12,7 @@ repos:
     id: check-yaml
     name: Check pre-commit config
   repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.0.1
+  rev: v4.4.0
 - hooks:
   - description: Scan Nix files for dead code
     id: deadnix
