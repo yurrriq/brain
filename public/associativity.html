@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2021-12-24 Fri 00:45 -->
+<!-- 2023-02-26 Sun 01:28 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>associativity</title>
@@ -188,46 +188,50 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">associativity</h1>
 <p>
-\(
-  \require{newcommand}
-  \newcommand{\mor}[3]{#1~:~#2~\to~#3}
-\)
-</p>
-
-<p>
-Given <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphisms</a> \(\mor{f}{A}{B}\), \(\mor{g}{B}{C}\), and \(\mor{h}{C}{D}\), the following <a href="diagram.html#ID-68d42592-8a8e-4a19-8479-bd6c5414ad72">diagram</a><sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> commutes.
+Given <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphisms</a> \(f~:~A~\to~B\), \(g~:~B~\to~C\), and \(h~:~C~\to~D\), the following <a href="diagram.html#ID-68d42592-8a8e-4a19-8479-bd6c5414ad72">diagram</a><sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> commutes.
 </p>
 
 
-<div id="orga9355c7" class="figure">
+<div id="orgc6d9955" class="figure">
 <p><img src="./svg/category-associativity.svg" alt="category-associativity.svg" class="org-svg">
 </p>
 <p><span class="figure-number">Figure 1: </span>A commutative diagram of associativity</p>
@@ -237,14 +241,14 @@ Given <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphisms<
 <div id="text-footnotes">
 
 <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
-Generated with <a href="https://www.ctan.org/pkg/tikz-cd">Ti/k/Z</a> and the <a href="https://poppler.freedesktop.org/">Poppler</a> tool <code>pdftocairo</code>.
+Generated with <a href="https://www.ctan.org/pkg/tikz-cd">TiKZ</a> and the <a href="https://poppler.freedesktop.org/">Poppler</a> tool <code>pdftocairo</code>.
 </p></div></div>
 
 
 </div>
 </div></div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-12-24 Fri 00:45</p>
+<p class="date">Created: 2023-02-26 Sun 01:28</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

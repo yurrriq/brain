@@ -2,12 +2,15 @@
 #+TITLE: Category Theory
 
 - [[file:associativity.org][associativity]]
+- [[file:axiom.org][axiom]]
 - [[file:category.org][category]]
 - [[file:codomain.org][codomain]]
+- [[file:composition.org][composition]]
 - [[file:diagram.org][diagram]]
 - [[file:domain.org][domain]]
 - [[file:endofunctor.org][endofunctor]]
 - [[file:functor.org][functor]]
 - [[file:magma.org][magma]]
 - [[file:morphism.org][morphism]]
+- [[file:objects.org][object]]
 file:sitemap.svg

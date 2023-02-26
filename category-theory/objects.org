@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       deb29391-b39d-41f4-aa9b-5840c873ba09
+:ROAM_ALIASES: objects
+:END:
+#+title: object
+
+TBW
