@@ -14,15 +14,16 @@ repos:
   repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.0.1
 - hooks:
-  - id: nixpkgs-fmt
-    name: Format .nix files
-  repo: https://github.com/nix-community/nixpkgs-fmt
-  rev: v1.2.0
-- hooks:
   - description: Scan Nix files for dead code
     id: deadnix
     name: deadnix
     entry: deadnix --edit --fail # --no-lambda-arg --no-lambda-pattern-names
+    language: system
+    files: \.nix$
+  - description: Format nix code with nixpkgs-fmt.
+    id: nixpkgs-fmt
+    name: nixpkgs-fmt
+    entry: nixpkgs-fmt
     language: system
     files: \.nix$
   repo: local
