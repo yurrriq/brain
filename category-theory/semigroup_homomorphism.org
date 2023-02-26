@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       fb96672b-957d-4e11-a646-dd3c15607cf9
+:END:
+#+title: semigroup homomorphism
+
+A [[id:055f644b-3f1e-484a-b4a7-f9bd854f9da0][homomorphism]] between [[id:867c8703-b7fd-4219-830c-634032823e01][semigroups]] $A$ and $B$ consists of:
+- a function $f : A \to B$ of the underlying sets
+
+such that:
+- $f$ respects $\cdot$: $f(x \cdot y) = f(x) \cdot f(y)$

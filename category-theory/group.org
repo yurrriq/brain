@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0445e8d4-3afb-4d30-8c6a-055d1fd6d1f7
+:ROAM_ALIASES: groups
+:END:
+#+title: group
+
+TBW

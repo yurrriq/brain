@@ -4,4 +4,4 @@
 :END:
 #+title: object
 
-TBW
+/*Objects*/ can naively be thought of as the "elements" of a category.

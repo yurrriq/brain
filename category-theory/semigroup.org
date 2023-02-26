@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       867c8703-b7fd-4219-830c-634032823e01
+:ROAM_ALIASES: semigroups
+:END:
+#+title: semigroup
+
+A semigroup $(S, \cdot)$ consists of:
+- a set $S$
+- an [[id:4b5ec273-b6b0-4b78-b3a3-7e6560a8f7fa][associative]] binary operation $\cdot$
+
+satisfying the following [[id:eb05b428-9099-4308-b817-825c0f89c071][axioms]]:
+- *Associativity*: $(x \cdot y) \cdot z = x \cdot (y \cdot z)$
+
+A semigroup might more systematically be called a semi-monoid, since it's like a
+[[id:d33f55e0-14a5-47e3-86d9-3f283bab59c9][monoid]] that might not have an identity element.

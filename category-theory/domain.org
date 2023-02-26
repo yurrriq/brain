@@ -1,6 +1,10 @@
 :PROPERTIES:
 :ID:       15583214-dd47-426b-b1eb-86d92bfa565b
+:ROAM_ALIASES: "source object" source
 :END:
 #+title: domain
 
-TBW
+The /*domain*/, /*source object*/, or /*source*/, of a [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphism]] $f : x \to y$ in
+a [[id:06fc0ae5-533c-4b99-be3a-26b98dddae39][category]] $\mathcal{C}$ is the [[id:deb29391-b39d-41f4-aa9b-5840c873ba09][object]] $x$.
+
+The dual concept is [[id:459a0131-65a1-4a2f-966b-a93556548037][codomain]].

@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       4b5ec273-b6b0-4b78-b3a3-7e6560a8f7fa
+:ROAM_ALIASES: associative
 :END:
 #+title: associativity
 
