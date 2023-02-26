@@ -77,7 +77,12 @@
                '("c" "concept" plain "%?"
                  :target (file+head "${slug}.org"
                                     "#+title: ${title}\n")
-                 :unnarrowed t)))
+                 :unnarrowed t))
+  ;; https://github.com/org-roam/org-roam-ui/issues/236
+  (setq
+   org-roam-directory (expand-file-name (concat default-directory "category-theory/"))
+   org-roam-db-location (expand-file-name org-roam-directory "org-roam.db")
+   org-id-locations-file (expand-file-name ".org-id-locations" org-roam-directory)))
 
 (defun eb/org-roam-custom-link-builder (node)
   (let ((file (org-roam-node-file node)))
