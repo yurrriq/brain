@@ -57,6 +57,7 @@
                   filemod
                   latexmk
                   standalone
+                  svn-prov
                   tikz-cd
                   ;
               }
