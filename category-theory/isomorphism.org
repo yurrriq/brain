@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       79449373-1b4e-4539-a9c6-cf60e3706bc5
+:END:
+#+title: isomorphism
+
+An invertible [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphism]]. Two [[id:deb29391-b39d-41f4-aa9b-5840c873ba09][objects]] are /*isomorphic*/ if there exists an
+/*isomorphism*/ between them.

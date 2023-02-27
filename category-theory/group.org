@@ -4,4 +4,4 @@
 :END:
 #+title: group
 
-TBW
+A /*group*/ is a [[id:d33f55e0-14a5-47e3-86d9-3f283bab59c9][monoid]] in which every element has an

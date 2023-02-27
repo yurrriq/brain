@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       87aa130b-1cfe-45a2-9722-898fb32ef822
+:ROAM_ALIASES: section
+:END:
+#+title: right-inverse
+
+A /*section*/ or /*right-[[id:a51f7070-8d25-4a88-9f17-9d2fd560e0fe][inverse]]*/ of a [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphism]] $f: X \to Y$ in a [[id:06fc0ae5-533c-4b99-be3a-26b98dddae39][category]] is a
+[[id:fca06db8-da2d-434a-888d-16190002dbf1][morphism]] $s : Y \to X$, such that $fs = 1_Y$
+
+#+CAPTION: A commutative diagram of retraction
+[[./svg/right-inverse.svg]]

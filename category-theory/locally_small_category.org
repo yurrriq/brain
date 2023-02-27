@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       7c2f73ad-42c2-432f-90b6-5078c772ed7c
+:ROAM_ALIASES: "locally small"
+:END:
+#+title: locally small category
+
+A /*locally*/ [[id:e0fb385c-4e73-4295-8444-819e395277a0][small category]] is a [[id:06fc0ae5-533c-4b99-be3a-26b98dddae39][category]] $\mathcal{C}$, such that for all $x$
+and $y$ in $\mathcal{C}$, the [[id:03c4318c-1b62-403e-8d54-d6618dcdd1bb][hom-class]] $\hom(x,y)$ is a set.

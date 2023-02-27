@@ -1,0 +1,11 @@
+\documentclass[crop,tikz,convert]{standalone}
+\usepackage{standalone}
+\standaloneconfig{convert={convertexe={convert}}}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+\pagecolor{white}
+\begin{document}
+\begin{tikzcd}
+  X \rar{s} \arrow[rr, dashed, bend right, "1_X"'] & Y \rar{r} & X
+\end{tikzcd}
+\end{document}

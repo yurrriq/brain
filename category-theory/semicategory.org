@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       4239a88f-003d-4e4f-8856-478f84abf818
+:END:
+#+title: semicategory
+
+A /*semicategory*/ is like a [[id:06fc0ae5-533c-4b99-be3a-26b98dddae39][category]] that might not have an identity morphism.
+
+For example, a [[id:867c8703-b7fd-4219-830c-634032823e01][semigroup]] is (the [[id:03c4318c-1b62-403e-8d54-d6618dcdd1bb][hom-set]] of) a /*semicategory*/ with a single
+object.

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       fca06db8-da2d-434a-888d-16190002dbf1
-:ROAM_ALIASES: maps arrow map
+:ROAM_ALIASES: morphisms maps arrow map
 :END:
 #+title: morphism
 

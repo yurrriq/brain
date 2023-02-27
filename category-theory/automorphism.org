@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       7a444a28-6e06-4477-9cc0-40b9cc3bb38f
+:END:
+#+title: automorphism
+
+An /*automorphism*/ is an [[id:79449373-1b4e-4539-a9c6-cf60e3706bc5][isomorphism]] from one object to itself, i.e. an
+[[id:79449373-1b4e-4539-a9c6-cf60e3706bc5][isomorphism]] that is also an [[id:94e2fa7f-8775-4668-bb18-96014dd53644][endomorphism]].
