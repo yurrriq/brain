@@ -3,4 +3,4 @@
 :END:
 #+title: functor
 
-TBW
+A /*functor*/ is a [[id:055f644b-3f1e-484a-b4a7-f9bd854f9da0][homomorphism]] of [[id:06fc0ae5-533c-4b99-be3a-26b98dddae39][categories]].
