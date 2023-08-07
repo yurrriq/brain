@@ -2,4 +2,5 @@
 :ID:       3ab85bfe-84ae-4364-970c-19005d632f09
 :END:
 #+title: functor
+
 TBW

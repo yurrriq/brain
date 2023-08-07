@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2023-08-06 Sun 23:16 -->
+<!-- 2023-08-06 Sun 23:17 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>codomain</title>
+<title>monoid homomorphism</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -225,18 +225,23 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">codomain</h1>
+<h1 class="title">monoid homomorphism</h1>
 <p>
-The <i><b>codomain</b></i>, <i><b>target object</b></i>, or <i><b>target</b></i>, of a <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphism</a> \(f : x \to y\)
-in a <a href="category.html#ID-06fc0ae5-533c-4b99-be3a-26b98dddae39">category</a> \(\mathcal{C}\) is the <a href="object.html#ID-deb29391-b39d-41f4-aa9b-5840c873ba09">object</a> \(y\).
+A <a href="homomorphism.html#ID-055f644b-3f1e-484a-b4a7-f9bd854f9da0">homomorphism</a> between <a href="monoid.html#ID-d33f55e0-14a5-47e3-86d9-3f283bab59c9">monoids</a> \(A\) and \(B\) consists of:
 </p>
+<ul class="org-ul">
+<li>a <a href="semigroup_homomorphism.html#ID-fb96672b-957d-4e11-a646-dd3c15607cf9">semigroup homomorphism</a> \(f : A \to B\) of the underlying <a href="semigroup.html#ID-867c8703-b7fd-4219-830c-634032823e01">semigroups</a></li>
+</ul>
 
 <p>
-The dual concept is <a href="domain.html#ID-15583214-dd47-426b-b1eb-86d92bfa565b">domain</a>.
+such that:
 </p>
+<ul class="org-ul">
+<li>\(f\) respects the identity: \(f(1_A) = 1_B)\)</li>
+</ul>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2023-08-06 Sun 23:16</p>
+<p class="date">Created: 2023-08-06 Sun 23:17</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

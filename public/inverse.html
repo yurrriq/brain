@@ -4,7 +4,7 @@
 <!-- 2023-08-06 Sun 23:16 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>codomain</title>
+<title>inverse</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -225,14 +225,18 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">codomain</h1>
+<h1 class="title">inverse</h1>
 <p>
-The <i><b>codomain</b></i>, <i><b>target object</b></i>, or <i><b>target</b></i>, of a <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphism</a> \(f : x \to y\)
-in a <a href="category.html#ID-06fc0ae5-533c-4b99-be3a-26b98dddae39">category</a> \(\mathcal{C}\) is the <a href="object.html#ID-deb29391-b39d-41f4-aa9b-5840c873ba09">object</a> \(y\).
+The <i><b>inverse</b></i> of a <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphism</a> \(f : X \to Y\) is another <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphism</a>
+\(f^{-1} : Y \to X\), such that \(f^{-1}\) is a
 </p>
+<ul class="org-ul">
+<li><a href="left_inverse.html#ID-9f2ac780-945e-44ff-a2ee-e06004488c6a">left-inverse</a> of \(f\): \(f^{-1} \circ f = 1_X\)</li>
+<li><a href="right_inverse.html#ID-87aa130b-1cfe-45a2-9722-898fb32ef822">right-inverse</a> of \(f\): \(f \circ f^{-1} = 1_Y\)</li>
+</ul>
 
 <p>
-The dual concept is <a href="domain.html#ID-15583214-dd47-426b-b1eb-86d92bfa565b">domain</a>.
+A <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphism</a> that has an <i><b>inverse</b></i> is called an <a href="isomorphism.html#ID-79449373-1b4e-4539-a9c6-cf60e3706bc5">isomorphism</a>.
 </p>
 </div>
 <div id="postamble" class="status">
