@@ -17,7 +17,7 @@
 (global-set-key (kbd "C-x C-k") 'kill-this-buffer)
 (global-set-key (kbd "s-u") 'revert-buffer)
 
-(set-face-attribute 'default nil :family "Iosevka" :height 110)
+(set-face-attribute 'default nil :family "Iosevka Nerd Font" :height 110)
 
 (eval-when-compile
   (require 'use-package))
@@ -32,10 +32,6 @@
   :config
   (direnv-mode))
 
-(use-package editorconfig
-  :config
-  (editorconfig-mode 1))
-
 (use-package fill-column-indicator
   :config
   (setq-default fill-column 80)
@@ -49,6 +45,10 @@
   :demand
   :config (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines))
 
+(use-package magit
+  :bind
+  (("C-x g" . magit-status)))
+
 (use-package nix-mode)
 
 (use-package nyan-mode
@@ -56,28 +56,30 @@
   :demand)
 
 (use-package org-roam
+  :after org
   :init
   (setq org-roam-v2-ack t)
   :custom
   (org-roam-completion-everywhere t)
   ;; FIXME
   (org-roam-graph-link-builder 'eb/org-roam-custom-link-builder)
-  :bind (("C-c n f" . org-roam-node-find)
-         (:map org-mode-map
-               (("C-c n l" . org-roam-buffer-toggle)
-                ("C-c n i" . org-roam-node-insert)
-                ("C-c n o" . org-id-get-create)
-                ("C-c n t" . org-roam-tag-add)
-                ("C-c n a" . org-roam-alias-add)
-                ("C-M-i" . completion-at-point))))
+  :bind
+  (("C-c n f" . org-roam-node-find)
+   ("C-c n l" . org-roam-buffer-toggle)
+   (:map org-mode-map
+         (("C-c n a" . org-roam-alias-add)
+          ("C-c n i" . org-roam-node-insert)
+          ("C-c n o" . org-id-get-create)
+          ("C-c n t" . org-roam-tag-add)
+          ("C-M-i" . completion-at-point))))
   :config
-  (org-roam-setup)
   ;; FIXME: update for v2
   (add-to-list 'org-roam-capture-templates
                '("c" "concept" plain "%?"
                  :target (file+head "${slug}.org"
                                     "#+title: ${title}\n")
                  :unnarrowed t))
+    (org-roam-setup)
   ;; https://github.com/org-roam/org-roam-ui/issues/236
   (setq
    org-roam-directory (expand-file-name (concat default-directory "category-theory/"))
@@ -89,21 +91,26 @@
     (concat (file-name-base file) ".html")))
 
 (defun eb/org-roam-publish-to-html (plist filename pubdir)
-  (org-roam-graph)
+  ;; FIXME:
+  ;; (org-roam-graph)
   (org-html-publish-to-html plist filename pubdir))
 
 (defun eb/org-roam-sitemap (title list)
   (concat "#+OPTIONS: ^:nil author:nil html-postamble:nil\n"
           "#+TITLE: " title "\n\n"
-          (org-list-to-org list) "\nfile:sitemap.svg\n"))
+          (org-list-to-org list)
+          ;; FIXME:
+          ;; "\nfile:sitemap.svg\n"
+          ))
 
 (use-package org-roam-ui
   :after org-roam
   :config
-  (setq org-roam-ui-sync-theme t
-        org-roam-ui-follow t
-        org-roam-ui-update-on-save t
-        org-roam-ui-open-on-start t))
+  (setq
+   org-roam-ui-sync-theme t
+   org-roam-ui-follow t
+   org-roam-ui-update-on-save t
+   org-roam-ui-open-on-start t))
 
 (use-package smex
   :demand
