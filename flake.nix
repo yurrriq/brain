@@ -77,7 +77,7 @@
           settings.formatter = {
             prettier.excludes = [
               "**/.obsidian/**"
-              "public/**"
+              "docs/**"
             ];
           };
         };
