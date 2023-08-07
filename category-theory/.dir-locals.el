@@ -23,6 +23,7 @@
                   `(("category-theory-html"
                      :base-directory       ,org-roam-directory
                      :auto-sitemap         t
+                     :sitemap-filename     "index.org"
                      ;; FIXME:
                      ;; :sitemap-function     eb/org-roam-sitemap
                      :sitemap-title        "Category Theory"
@@ -35,10 +36,10 @@
                      :html-extension       "html"
                      :htmlized-source      t)
                     ("category-theory-svg"
-                     :base-directory ,(expand-file-name (concat org-roam-directory "svg/"))
-                     :base-extension "svg"
+                     :base-directory       ,(expand-file-name (concat org-roam-directory "svg/"))
+                     :base-extension       "svg"
                      :publishing-directory ,(file-name-concat project-root "docs" "svg")
-                     :publishing-function org-publish-attachment)
+                     :publishing-function  org-publish-attachment)
                     ("category-theory"
                      :components
                      ("category-theory-html"
