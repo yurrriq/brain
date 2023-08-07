@@ -45,6 +45,7 @@
             gnumake
             graphviz
             poppler_utils
+            ripgrep
             (
               texlive.combine {
                 inherit (texlive) scheme-small

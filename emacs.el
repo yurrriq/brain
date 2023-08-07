@@ -28,6 +28,10 @@
   :config
   (global-set-key (kbd "C-a") 'crux-move-beginning-of-line))
 
+(use-package deadgrep
+  :demand
+  :config (global-set-key (kbd "M-s-f") #'deadgrep))
+
 (use-package direnv
   :config
   (direnv-mode))
