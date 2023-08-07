@@ -2,39 +2,37 @@
   description = "Stuff I know";
 
   inputs = {
-    deadnix = {
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        utils.follows = "flake-utils";
-      };
-      url = "github:astro/deadnix";
-    };
     emacs-overlay = {
-      inputs = {
-        flake-utils.follows = "flake-utils";
-        nixpkgs.follows = "nixpkgs";
-      };
+      inputs.nixpkgs.follows = "nixpkgs";
       url = "github:nix-community/emacs-overlay";
     };
-    flake-utils.url = "github:numtide/flake-utils";
+    flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:nixos/nixpkgs";
+    pre-commit-hooks-nix.url = "github:cachix/pre-commit-hooks.nix";
+    treefmt-nix.url = "github:numtide/treefmt-nix";
   };
 
-  outputs = { emacs-overlay, flake-utils, nixpkgs, ... }@inputs:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = import nixpkgs {
+  outputs = inputs@{ emacs-overlay, flake-parts, nixpkgs, ... }:
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      imports = [
+        inputs.pre-commit-hooks-nix.flakeModule
+        inputs.treefmt-nix.flakeModule
+      ];
+
+      systems = [
+        "x86_64-linux"
+      ];
+
+      perSystem = { config, pkgs, system, ... }: {
+        _module.args.pkgs = import nixpkgs {
           overlays = [
-            inputs.deadnix.overlays.default
             emacs-overlay.overlay
           ];
           inherit system;
         };
-      in
-      {
+
         devShells.default = with pkgs; mkShell {
-          buildInputs = [
-            deadnix
+          nativeBuildInputs = [
             (
               emacsWithPackagesFromUsePackage {
                 alwaysEnsure = true;
@@ -46,9 +44,7 @@
             )
             gnumake
             graphviz
-            nixpkgs-fmt
             poppler_utils
-            pre-commit
             (
               texlive.combine {
                 inherit (texlive) scheme-small
@@ -63,6 +59,28 @@
               }
             )
           ];
+
+          inherit (config.pre-commit.devShell) shellHook;
         };
-      });
+
+        pre-commit.settings.hooks = {
+          treefmt.enable = true;
+        };
+
+        treefmt = {
+          projectRootFile = ./flake.nix;
+          programs = {
+            deadnix.enable = true;
+            nixpkgs-fmt.enable = true;
+            prettier.enable = true;
+          };
+          settings.formatter = {
+            prettier.excludes = [
+              "**/.obsidian/**"
+              "public/**"
+            ];
+          };
+        };
+      };
+    };
 }
