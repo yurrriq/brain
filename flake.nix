@@ -86,7 +86,6 @@
           };
           settings.formatter = {
             prettier.excludes = [
-              "**/.obsidian/**"
               "docs/**"
             ];
           };

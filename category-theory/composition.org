@@ -3,4 +3,5 @@
 :END:
 #+title: composition
 
-TBW
+A /*composite*/ $gf : X \to Z$ of [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphisms]] $f : X \to Y$ and $g : Y \to Z$ is
+the collection of pairs $(x, z)$ in $X \times Z$.

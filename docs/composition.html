@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2023-08-06 Sun 23:55 -->
+<!-- 2024-01-02 Tue 01:50 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>composition</title>
@@ -190,16 +190,49 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">composition</h1>
 <p>
-TBW
+A <i><b>composite</b></i> \(gf : X \to Z\) of <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphisms</a> \(f : X \to Y\) and \(g : Y \to Z\) is
+the collection of pairs \((x, z)\) in \(X \times Z\).
 </p>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2023-08-06 Sun 23:55</p>
+<p class="date">Created: 2024-01-02 Tue 01:50</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
