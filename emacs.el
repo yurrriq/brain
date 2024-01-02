@@ -116,6 +116,12 @@
    org-roam-ui-update-on-save t
    org-roam-ui-open-on-start t))
 
+(use-package paredit
+  :hook (emacs-lisp-mode . paredit-mode))
+
+(use-package rainbow-delimiters
+  :hook (prog-mode . rainbow-delimiters-mode))
+
 (use-package smex
   :demand
   :config
