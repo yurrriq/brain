@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-01-02 Tue 01:27 -->
+<!-- 2024-01-02 Tue 01:28 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Category Theory</title>
+<title>contravariant functor</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -190,48 +190,56 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Category Theory</h1>
-<ul class="org-ul">
-<li><a href="sitemap.html">Category Theory</a></li>
-<li><a href="grp.html">Grp</a></li>
-<li><a href="associativity.html">associativity</a></li>
-<li><a href="automorphism.html">automorphism</a></li>
-<li><a href="axiom.html">axiom</a></li>
-<li><a href="category.html">category</a></li>
-<li><a href="codomain.html">codomain</a></li>
-<li><a href="composition.html">composition</a></li>
-<li><a href="contravariant_functor.html">contravariant functor</a></li>
-<li><a href="covariant_functor.html">covariant functor</a></li>
-<li><a href="diagram.html">diagram</a></li>
-<li><a href="domain.html">domain</a></li>
-<li><a href="endofunctor.html">endofunctor</a></li>
-<li><a href="endomorphism.html">endomorphism</a></li>
-<li><a href="functor.html">functor</a></li>
-<li><a href="group.html">group</a></li>
-<li><a href="hom_set.html">hom-set</a></li>
-<li><a href="homomorphism.html">homomorphism</a></li>
-<li><a href="inverse.html">inverse</a></li>
-<li><a href="isomorphism.html">isomorphism</a></li>
-<li><a href="left_inverse.html">left-inverse</a></li>
-<li><a href="locally_small_category.html">locally small category</a></li>
-<li><a href="magma.html">magma</a></li>
-<li><a href="monoid.html">monoid</a></li>
-<li><a href="monoid_homomorphism.html">monoid homomorphism</a></li>
-<li><a href="morphism.html">morphism</a></li>
-<li><a href="object.html">object</a></li>
-<li><a href="opposite_category.html">opposite<sub>category</sub></a></li>
-<li><a href="right_inverse.html">right-inverse</a></li>
-<li><a href="semicategory.html">semicategory</a></li>
-<li><a href="semigroup.html">semigroup</a></li>
-<li><a href="semigroup_homomorphism.html">semigroup homomorphism</a></li>
-<li><a href="small_category.html">small category</a></li>
-</ul>
+<h1 class="title">contravariant functor</h1>
+<p>
+A <i><b>contravariant functor</b></i> is a <a href="functor.html#ID-3ab85bfe-84ae-4364-970c-19005d632f09">functor</a> with the directions of the <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphisms</a>
+reversed, e.g. a <i><b>contravariant functor</b></i> \(\mathcal{C} \to \mathcal{D}\) is
+a <a href="functor.html#ID-3ab85bfe-84ae-4364-970c-19005d632f09">functor</a> \(\mathcal{C}^{op} \to \mathcal{D}\).
+</p>
+
+<p>
+A non-contravariant <a href="functor.html#ID-3ab85bfe-84ae-4364-970c-19005d632f09">functor</a> \(\mathcal{C} \to \mathcal{D}\) is sometimes called a
+<a href="covariant_functor.html#ID-2bcb3f73-6e0f-4f3a-b816-76307d6fccae">covariant functor</a>, for emphasis, and to disambiguate from the <i><b>contravariant
+functor</b></i> \(\mathcal{C}^{op} \to \mathcal{D}\).
+</p>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2024-01-02 Tue 01:27</p>
+<p class="date">Created: 2024-01-02 Tue 01:28</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

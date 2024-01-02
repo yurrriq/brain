@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       ad3ccafc-1512-4080-903e-a29e91f1345b
+:END:
+#+title: contravariant functor
+
+A /*contravariant functor*/ is a [[id:3ab85bfe-84ae-4364-970c-19005d632f09][functor]] with the directions of the [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphisms]]
+reversed, e.g. a /*contravariant functor*/ $\mathcal{C} \to \mathcal{D}$ is
+a [[id:3ab85bfe-84ae-4364-970c-19005d632f09][functor]] $\mathcal{C}^{op} \to \mathcal{D}$.
+
+A non-contravariant [[id:3ab85bfe-84ae-4364-970c-19005d632f09][functor]] $\mathcal{C} \to \mathcal{D}$ is sometimes called a
+[[id:2bcb3f73-6e0f-4f3a-b816-76307d6fccae][covariant functor]], for emphasis, and to disambiguate from the /*contravariant
+functor*/ $\mathcal{C}^{op} \to \mathcal{D}$.

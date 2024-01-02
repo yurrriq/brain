@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       79449373-1b4e-4539-a9c6-cf60e3706bc5
+:ROAM_ALIASES: isomorphic
 :END:
 #+title: isomorphism
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-01-02 Tue 01:27 -->
+<!-- 2024-01-02 Tue 01:28 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Category Theory</title>
+<title>opposite category</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -190,48 +190,67 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Category Theory</h1>
+<h1 class="title">opposite category</h1>
+<p>
+For a <a href="category.html#ID-06fc0ae5-533c-4b99-be3a-26b98dddae39">category</a> \(\mathcal{C}\), its <i><b>opposite category</b></i> or <i><b>dual category</b></i>
+\(\mathcal{C}^{op}\) is formed by reversing the <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphisms</a> (preserving
+<a href="composition.html#ID-83c19dfa-4878-456d-be4d-614c5f39a29e">composition</a>).
+</p>
+
+<p>
+Some interesting properties:
+</p>
+
 <ul class="org-ul">
-<li><a href="sitemap.html">Category Theory</a></li>
-<li><a href="grp.html">Grp</a></li>
-<li><a href="associativity.html">associativity</a></li>
-<li><a href="automorphism.html">automorphism</a></li>
-<li><a href="axiom.html">axiom</a></li>
-<li><a href="category.html">category</a></li>
-<li><a href="codomain.html">codomain</a></li>
-<li><a href="composition.html">composition</a></li>
-<li><a href="contravariant_functor.html">contravariant functor</a></li>
-<li><a href="covariant_functor.html">covariant functor</a></li>
-<li><a href="diagram.html">diagram</a></li>
-<li><a href="domain.html">domain</a></li>
-<li><a href="endofunctor.html">endofunctor</a></li>
-<li><a href="endomorphism.html">endomorphism</a></li>
-<li><a href="functor.html">functor</a></li>
-<li><a href="group.html">group</a></li>
-<li><a href="hom_set.html">hom-set</a></li>
-<li><a href="homomorphism.html">homomorphism</a></li>
-<li><a href="inverse.html">inverse</a></li>
-<li><a href="isomorphism.html">isomorphism</a></li>
-<li><a href="left_inverse.html">left-inverse</a></li>
-<li><a href="locally_small_category.html">locally small category</a></li>
-<li><a href="magma.html">magma</a></li>
-<li><a href="monoid.html">monoid</a></li>
-<li><a href="monoid_homomorphism.html">monoid homomorphism</a></li>
-<li><a href="morphism.html">morphism</a></li>
-<li><a href="object.html">object</a></li>
-<li><a href="opposite_category.html">opposite<sub>category</sub></a></li>
-<li><a href="right_inverse.html">right-inverse</a></li>
-<li><a href="semicategory.html">semicategory</a></li>
-<li><a href="semigroup.html">semigroup</a></li>
-<li><a href="semigroup_homomorphism.html">semigroup homomorphism</a></li>
-<li><a href="small_category.html">small category</a></li>
+<li>A <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphism</a> \(f : x \to y\) in \(\mathcal{C}^{op}\) is the same as a <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphism</a>
+\(f : y \to x\) in \(\mathcal{C}\)</li>
+<li>\(\mathcal{C}^{op}\) has the same (<a href="isomorphism.html#ID-79449373-1b4e-4539-a9c6-cf60e3706bc5">isomorphic</a>) collection of <a href="object.html#ID-deb29391-b39d-41f4-aa9b-5840c873ba09">objects</a> and
+<a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphisms</a> as \(\mathcal{C}\):
+<ul class="org-ul">
+<li>\(\left(\mathcal{C}^{op}\right)_{obj} \simeq \mathcal{C}_{obj}\)</li>
+<li>\(\left(\mathcal{C}^{op}\right)_{mor} \simeq \mathcal{C}_{mor}\)</li>
+</ul></li>
+<li>Reversing the direction of all the <a href="morphism.html#ID-fca06db8-da2d-434a-888d-16190002dbf1">morphisms</a> twice results in the original
+<a href="category.html#ID-06fc0ae5-533c-4b99-be3a-26b98dddae39">category</a>: \(\left(\mathcal{C}^{op}\right)^{op} = \mathcal{C}\)</li>
 </ul>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2024-01-02 Tue 01:27</p>
+<p class="date">Created: 2024-01-02 Tue 01:28</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
