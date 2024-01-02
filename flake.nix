@@ -12,6 +12,10 @@
     treefmt-nix.url = "github:numtide/treefmt-nix";
   };
 
+  nixConfig = {
+    commit-lockfile-summary = "build(deps): nix flake update";
+  };
+
   outputs = inputs@{ emacs-overlay, flake-parts, nixpkgs, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
