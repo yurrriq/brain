@@ -89,22 +89,23 @@
    org-roam-db-location (expand-file-name org-roam-directory "org-roam.db")
    org-id-locations-file (expand-file-name ".org-id-locations" org-roam-directory)))
 
-(defun eb/org-roam-custom-link-builder (node)
-  (let ((file (org-roam-node-file node)))
-    (concat (file-name-base file) ".html")))
+(eval-and-compile
+  (defun eb/org-roam-custom-link-builder (node)
+    (let ((file (org-roam-node-file node)))
+      (concat (file-name-base file) ".html")))
 
-(defun eb/org-roam-publish-to-html (plist filename pubdir)
-  ;; FIXME:
-  ;; (org-roam-graph)
-  (org-html-publish-to-html plist filename pubdir))
+  (defun eb/org-roam-publish-to-html (plist filename pubdir)
+    ;; FIXME:
+    ;; (org-roam-graph)
+    (org-html-publish-to-html plist filename pubdir))
 
-(defun eb/org-roam-sitemap (title list)
-  (concat "#+OPTIONS: ^:nil author:nil html-postamble:nil\n"
-          "#+TITLE: " title "\n\n"
-          (org-list-to-org list)
-          ;; FIXME:
-          ;; "\nfile:sitemap.svg\n"
-          ))
+  (defun eb/org-roam-sitemap (title list)
+    (concat "#+OPTIONS: ^:nil author:nil html-postamble:nil\n"
+            "#+TITLE: " title "\n\n"
+            (org-list-to-org list)
+            ;; FIXME:
+            ;; "\nfile:sitemap.svg\n"
+            )))
 
 (use-package org-roam-ui
   :after org-roam
