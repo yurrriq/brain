@@ -31,8 +31,13 @@
           inherit system;
         };
 
-        devShells.default = with pkgs; mkShell {
-          nativeBuildInputs = [
+        devShells.default = pkgs.mkShell {
+          FONTCONFIG_FILE = pkgs.makeFontsConf {
+            fontDirectories = [
+              (pkgs.nerdfonts.override { fonts = [ "Iosevka" ]; })
+            ];
+          };
+          nativeBuildInputs = with pkgs; [
             (
               emacsWithPackagesFromUsePackage {
                 alwaysEnsure = true;

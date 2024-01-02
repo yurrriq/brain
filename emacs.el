@@ -1,5 +1,4 @@
 (column-number-mode 1)
-(add-to-list 'exec-path "/run/current-system/sw/bin")
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
 (tool-bar-mode 0)
@@ -17,7 +16,7 @@
 (global-set-key (kbd "C-x C-k") 'kill-this-buffer)
 (global-set-key (kbd "s-u") 'revert-buffer)
 
-(set-face-attribute 'default nil :family "Iosevka Nerd Font" :height 110)
+(set-face-attribute 'default nil :family "Iosevka Nerd Font Mono" :height 110)
 
 (eval-when-compile
   (require 'use-package))
