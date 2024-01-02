@@ -86,7 +86,7 @@
   ;; https://github.com/org-roam/org-roam-ui/issues/236
   (setq
    org-roam-directory (expand-file-name (concat default-directory "category-theory/"))
-   org-roam-db-location (expand-file-name org-roam-directory "org-roam.db")
+   org-roam-db-location (expand-file-name "org-roam.db" org-roam-directory)
    org-id-locations-file (expand-file-name ".org-id-locations" org-roam-directory)))
 
 (eval-and-compile
