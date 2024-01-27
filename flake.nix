@@ -69,6 +69,7 @@
             )
             gnumake
             graphviz
+            logseq
             poppler_utils
             ripgrep
             (
