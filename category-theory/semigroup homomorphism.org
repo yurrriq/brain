@@ -1,0 +1,5 @@
+A [[homomorphism]] between [[semigroups]] $A$ and $B$ consists of:
+- a function $f : A \to B$ of the underlying sets
+
+such that:
+- $f$ respects $\cdot$: $f(x \cdot y) = f(x) \cdot f(y)$

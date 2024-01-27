@@ -1,7 +1,3 @@
-:PROPERTIES:
-:ID:       94e2fa7f-8775-4668-bb18-96014dd53644
-:ROAM_ALIASES: endomorphic
-:END:
-#+title: endomorphism
+#+alias: endomorphic
 
-A [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphism]] $f : x \to x$ of an object $x$ in a [[id:06fc0ae5-533c-4b99-be3a-26b98dddae39][category]] $\mathcal{C}$.
+A [[morphism]] $f : x \to x$ of an object $x$ in a [[category]] $\mathcal{C}$.

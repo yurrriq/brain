@@ -1,0 +1,2 @@
+A /*small category*/ is a [[category]] $\mathcal{C}$, such that the collection of
+[[objects]] and collection(s) or [[morphisms]] are all sets.

@@ -1,7 +1,3 @@
-:PROPERTIES:
-:ID:       deb29391-b39d-41f4-aa9b-5840c873ba09
-:ROAM_ALIASES: objects
-:END:
-#+title: object
+:ALIAS: objects
 
-/*Objects*/ can naively be thought of as the "elements" of a category.
+* /*Objects*/ can naively be thought of as the "elements" of a [[category]] .

@@ -1,4 +1,4 @@
-%.svg: ../tex/%.pdf
+../../assets/%.svg: ../tex/%.pdf
 	@ pdftocairo -svg $< $@
 
 ../tex/%.pdf: ../tex/%.tex

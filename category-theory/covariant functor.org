@@ -1,0 +1,2 @@
+A non-[[contravariant functor]] is sometimes called a /*covariant functor*/, for
+emphasis.

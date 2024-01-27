@@ -1,7 +1,1 @@
-:PROPERTIES:
-:ID:       0be295a7-7726-4e6e-ba86-47a37237d174
-:END:
-#+title: magma
-#+date: [2021-12-24 Fri]
-
-TBW
+* TBW

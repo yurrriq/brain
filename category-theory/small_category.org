@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       e0fb385c-4e73-4295-8444-819e395277a0
-:END:
-#+title: small category
-
-A /*small category*/ is a [[id:06fc0ae5-533c-4b99-be3a-26b98dddae39][category]] $\mathcal{C}$, such that the collection of
-[[id:deb29391-b39d-41f4-aa9b-5840c873ba09][objects]] and collection(s) or [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphisms]] are all sets.

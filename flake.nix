@@ -69,7 +69,9 @@
             )
             gnumake
             graphviz
-            logseq
+            # FIXME: use the nightly (20240126) AppImage for now
+            # https://github.com/logseq/logseq/releases/tag/nightly
+            # logseq
             poppler_utils
             ripgrep
             (

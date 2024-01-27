@@ -1,0 +1,4 @@
+#+alias: locally small
+
+A /*locally*/ [[small category]] is a [[category]] $\mathcal{C}$, such that for all $x$
+and $y$ in $\mathcal{C}$, the [[hom-class]] $\hom(x,y)$ is a set.

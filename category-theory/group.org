@@ -1,7 +1,3 @@
-:PROPERTIES:
-:ID:       0445e8d4-3afb-4d30-8c6a-055d1fd6d1f7
-:ROAM_ALIASES: groups
-:END:
-#+title: group
+#+alias: groups
 
-A /*group*/ is a [[id:d33f55e0-14a5-47e3-86d9-3f283bab59c9][monoid]] in which every element has an [[id:a51f7070-8d25-4a88-9f17-9d2fd560e0fe][inverse]].
+* A /*group*/ is a [[monoid]] in which every element has an [[inverse]].

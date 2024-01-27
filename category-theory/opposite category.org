@@ -1,0 +1,14 @@
+For a [[category]] $\mathcal{C}$, its /*opposite category*/ or /*dual category*/
+$\mathcal{C}^{op}$ is formed by reversing the [[morphisms]] (preserving
+[[composition]]).
+
+Some interesting properties:
+
+- A [[morphism]] $f : x \to y$ in $\mathcal{C}^{op}$ is the same as a [[morphism]]
+  $f : y \to x$ in $\mathcal{C}$
+- $\mathcal{C}^{op}$ has the same ([[isomorphic]]) collection of [[objects]] and
+  [[morphisms]] as $\mathcal{C}$:
+  - $\left(\mathcal{C}^{op}\right)_{obj} \simeq \mathcal{C}_{obj}$
+  - $\left(\mathcal{C}^{op}\right)_{mor} \simeq \mathcal{C}_{mor}$
+- Reversing the direction of all the [[morphisms]] twice results in the original
+  [[category]]: $\left(\mathcal{C}^{op}\right)^{op} = \mathcal{C}$

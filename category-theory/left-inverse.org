@@ -1,0 +1,7 @@
+#+public: true
+#+alias: cosection, retract, retraction
+
+* An [[object]] $X$ in a [[category]] is called a /*retract*/ of an object $Y$ if there
+exist [[morphisms]] $s : X \to Y$ and $r : Y \to A$ such that $rs = 1X$, where $r$
+is called a /*retraction*/ of $Y$ onto $X$ and $s$ is called a [[section]] of $r$.
+* [[../assets/left-inverse.svg]]
