@@ -1,0 +1,6 @@
+#+alias: hom-class
+
+For $x$ and $y$ in a [[category]] $\mathcal{C}$, the /*hom-set*/ or /*hom-class*/ is
+the collection of all [[morphisms]] from $x$ to $y$, written as $\hom(x,y)$,
+$\hom_{\mathcal{C}}(x,y)$, $Hom(x,y)$, $Hom_{\mathcal{C}}(x,y)$, $Mor(x,y)$,
+$Mor_{\mathcal{C}}(x,y)$, or simply $\mathcal{C}(x,y)$.

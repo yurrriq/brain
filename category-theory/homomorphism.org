@@ -1,7 +1,1 @@
-:PROPERTIES:
-:ID:       055f644b-3f1e-484a-b4a7-f9bd854f9da0
-:ROAM_ALIASES: homomorphism
-:END:
-#+title: homomorphism
-
-A structure-respecting or structure-preserving [[id:fca06db8-da2d-434a-888d-16190002dbf1][morphism]].
+A structure-respecting or structure-preserving [[morphism]].

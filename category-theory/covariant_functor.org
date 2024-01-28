@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       2bcb3f73-6e0f-4f3a-b816-76307d6fccae
-:END:
-#+title: covariant functor
-
-A non-[[id:ad3ccafc-1512-4080-903e-a29e91f1345b][contravariant functor]] is sometimes called a /*covariant functor*/, for
-emphasis.

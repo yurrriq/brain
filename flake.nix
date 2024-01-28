@@ -3,13 +3,29 @@
 
   inputs = {
     emacs-overlay = {
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        flake-utils.follows = "flake-utils";
+        nixpkgs.follows = "nixpkgs";
+        nixpkgs-stable.follows = "nixpkgs-stable";
+      };
       url = "github:nix-community/emacs-overlay";
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
-    nixpkgs.url = "github:nixos/nixpkgs";
-    pre-commit-hooks-nix.url = "github:cachix/pre-commit-hooks.nix";
-    treefmt-nix.url = "github:numtide/treefmt-nix";
+    flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/release-23.11";
+    pre-commit-hooks-nix = {
+      inputs = {
+        flake-utils.follows = "flake-utils";
+        nixpkgs.follows = "nixpkgs";
+        nixpkgs-stable.follows = "nixpkgs-stable";
+      };
+      url = "github:cachix/pre-commit-hooks.nix";
+    };
+    treefmt-nix = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:numtide/treefmt-nix";
+    };
   };
 
   nixConfig = {
@@ -53,6 +69,9 @@
             )
             gnumake
             graphviz
+            # FIXME: use the nightly (20240126) AppImage for now
+            # https://github.com/logseq/logseq/releases/tag/nightly
+            # logseq
             poppler_utils
             ripgrep
             (

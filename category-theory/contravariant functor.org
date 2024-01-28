@@ -1,0 +1,7 @@
+A /*contravariant functor*/ is a [[functor]] with the directions of the [[morphisms]]
+reversed, e.g. a /*contravariant functor*/ $\mathcal{C} \to \mathcal{D}$ is
+a [[functor]] $\mathcal{C}^{op} \to \mathcal{D}$.
+
+A non-contravariant [[functor]] $\mathcal{C} \to \mathcal{D}$ is sometimes called a
+[[covariant functor]], for emphasis, and to disambiguate from the /*contravariant
+functor*/ $\mathcal{C}^{op} \to \mathcal{D}$.

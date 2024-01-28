@@ -1,0 +1,5 @@
+A [[homomorphism]] between [[monoids]] $A$ and $B$ consists of:
+- a [[semigroup homomorphism]] $f : A \to B$ of the underlying [[semigroups]]
+
+such that:
+- $f$ respects the identity: $f(1_A) = 1_B)$

@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       3da31517-630d-4633-a7d1-c6313c5f3956
-:END:
-#+title: Grp
-
-A [[id:06fc0ae5-533c-4b99-be3a-26b98dddae39][category]] *Grp* of [[id:0445e8d4-3afb-4d30-8c6a-055d1fd6d1f7][groups]] and group [[id:055f644b-3f1e-484a-b4a7-f9bd854f9da0][homomorphisms]].

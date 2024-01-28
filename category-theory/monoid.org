@@ -1,14 +1,10 @@
-:PROPERTIES:
-:ID:       d33f55e0-14a5-47e3-86d9-3f283bab59c9
-:ROAM_ALIASES: monoids
-:END:
-#+title: monoid
+#+alias: monoids
 
 A monoid $(M, \cdot)$ consists of:
 - a set $M$
-- an [[id:4b5ec273-b6b0-4b78-b3a3-7e6560a8f7fa][associative]] binary operation $\cdot$
+- an [[associative]] binary operation $\cdot$
 - an identity element $1$
 
-satisfying the following [[id:eb05b428-9099-4308-b817-825c0f89c071][axioms]]:
+satisfying the following [[axioms]]:
  - *Associativity*: $(x \cdot y) \cdot z = x \cdot (y \cdot z)$
  - *Identity*: $1 \cdot x = x = x \cdot 1$
