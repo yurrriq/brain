@@ -39,6 +39,9 @@
       ];
 
       flake.overlays.default = _final: prev: {
+        logseq = prev.logseq.override {
+          electron = prev.electron_30;
+        };
         # FIXME: treefmt-nix doesn't seem to support v2 yet
         treefmt = prev.treefmt1;
       };
@@ -74,9 +77,7 @@
             )
             gnumake
             graphviz
-            # FIXME: use the nightly (20240126) AppImage for now
-            # https://github.com/logseq/logseq/releases/tag/nightly
-            # logseq
+            logseq
             poppler_utils
             ripgrep
             (
