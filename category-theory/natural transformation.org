@@ -1,0 +1,4 @@
+#+alias: natural transformations
+
+* Given [[categories]] $C$ and $D$ and [[functors]] $F, G : C \to D$, a /*natural transformation*/ $\alpha : F \rightarrow G$ between them.
+* [[file:../assets/natural-transformation.svg][diagram]]{:height 193, :width 255}

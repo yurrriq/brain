@@ -1,0 +1,8 @@
+* An [[https://eugeniacheng.com/wp-content/uploads/2017/02/cheng-lauda-guidebook.pdf][online book]] by Eugenia Cheng and Aaron Lauda
+* > This work gives an explanatory introduction to various definitions of
+ higher-dimensional category.  The emphasis is on ideas rather than 
+formalities; the aim is to shed light on the formalities by emphasising 
+the intuitions that lead there.  To aid this, the tone is informal and 
+there are copious pictures.  The definitions treated are those of 
+Baez-Dolan, Batanin, Joyal, Leinster, May, Penon, Simpson, Street, 
+Tamsamani and Trimble.

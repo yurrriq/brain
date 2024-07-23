@@ -1,0 +1,4 @@
+* The strict [[2-category]] with:
+- [[small categories]] as [[objects]]
+- [[functors]] as [[morphisms]]
+- [[natural transformations]] as [[2-morphisms]]

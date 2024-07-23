@@ -1,0 +1,7 @@
+#+alias: k-morphisms
+
+* In an [[n-category]], [[morphisms]] are organized into levels, parameterized by natural numbers.
+- An [[object]] can be thought of as a 0-morphism
+- A [[morphism]] is strictly speaking a 1-morphism
+- [[2-morphisms]] are between 1-morphisms
+- ...

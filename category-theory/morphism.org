@@ -1,4 +1,4 @@
-#+alias: morphisms, maps, arrow, map 
+#+alias: morphisms, maps, arrow, map
 
 * A *morphism* is a structure-preserving *map* (or *arrow*) between [[objects]] of the
 same type.

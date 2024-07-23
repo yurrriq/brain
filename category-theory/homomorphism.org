@@ -1,1 +1,3 @@
+#+alias: homomorphisms
+
 A structure-respecting or structure-preserving [[morphism]].

@@ -1,0 +1,7 @@
+* A (strict) $n$-[[category]] consists of:
+- [[objects]]: a set $C_0$
+- [[hom-categories][hom-(n-1)-categories]]: for all $a,b \in C_0$, an $(n-1)$-[[category]] $C(a,b)$
+- [[composition]]: for all $a,b,c \in C_0$, an $(n-1)$-[[functor]] $C(a,b) \times C(b,c) \to C(a,c)$
+- identites: for all $a \in C_0$, an $(n-1)$-[[functor]] $1 \to C(a,a)$ where $1$ is the terminal $(n-1)$-[[category]]
+* See also:
+- [[HIgher-Dimensional Categories: an illustrated guide book]]
