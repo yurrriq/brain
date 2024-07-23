@@ -153,6 +153,8 @@
 (use-package paredit
   :hook (emacs-lisp-mode . paredit-mode))
 
+(use-package pdf-tools)
+
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 

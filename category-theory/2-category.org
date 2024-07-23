@@ -1,0 +1,4 @@
+* A /*2-category*/ is an [[n-category]] for $n=2$ and consists of:
+- [[objects]]
+- 1-[[morphisms]] between objects
+- [[2-morphisms]] between morphisms

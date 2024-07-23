@@ -1,0 +1,5 @@
+#+alias: hom-categories
+
+* In a [[2-category]] $\mathcal{C}$, each pair of [[objects]] $a,b \in C_0$ determines a [[category]] $C(a,b)$, i.e., the /*hom-category*/ of $a$ and $b$.
+* The [[objects]] in the /*hom-category*/ $C(a,b)$ are the [[k-morphisms][1-morphisms]] in $\mathcal{C}$ from $a$ to $b$.
+* The [[morphisms]] in the /*hom-category*/ $C(a,b)$ are the [[2-morphisms]] of $\mathcal{C}$ that are horizontally between $a$ and $b$.

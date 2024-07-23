@@ -1,0 +1,1 @@
+* A /*2-morphism*/ is [[k-morphism]] for $k = 2$ in an [[n-category]], i.e., a morphism between 1-[[morphisms]].

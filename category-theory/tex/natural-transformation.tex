@@ -1,0 +1,15 @@
+\documentclass[crop,tikz,convert]{standalone}
+\usepackage{standalone}
+\standaloneconfig{convert={convertexe={convert}}}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+\pagecolor{white}
+\begin{document}
+\begin{tikzcd}[sep=huge]
+  \mathcal{C}
+    \rar[bend left=50, "F"{name=F}]
+    \rar[bend right=50, "G"{name=G, below}]
+    & \mathcal{D}
+  \dar[Rightarrow, from=F.south, to=G, shorten=1mm, "\alpha"]
+\end{tikzcd}
+\end{document}

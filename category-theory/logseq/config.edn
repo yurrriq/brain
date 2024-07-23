@@ -137,7 +137,7 @@
 
  ;; Set the default location for storing notes.
  ;; Default value: "pages"
- ;; :pages-directory "pages"
+ :pages-directory ""
 
  ;; Set the default location for storing journals.
  ;; Default value: "journals"

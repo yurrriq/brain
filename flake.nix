@@ -13,14 +13,13 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/release-23.11";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/release-24.05";
     pre-commit-hooks-nix = {
       inputs = {
-        flake-utils.follows = "flake-utils";
         nixpkgs.follows = "nixpkgs";
         nixpkgs-stable.follows = "nixpkgs-stable";
       };
-      url = "github:cachix/pre-commit-hooks.nix";
+      url = "github:cachix/git-hooks.nix";
     };
     treefmt-nix = {
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,12 +31,20 @@
     commit-lockfile-summary = "build(deps): nix flake update";
   };
 
-  outputs = inputs@{ emacs-overlay, flake-parts, nixpkgs, ... }:
+  outputs = inputs@{ emacs-overlay, flake-parts, nixpkgs, self, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
         inputs.pre-commit-hooks-nix.flakeModule
         inputs.treefmt-nix.flakeModule
       ];
+
+      flake.overlays.default = _final: prev: {
+        logseq = prev.logseq.override {
+          electron = prev.electron_30;
+        };
+        # FIXME: treefmt-nix doesn't seem to support v2 yet
+        treefmt = prev.treefmt1;
+      };
 
       systems = [
         "x86_64-linux"
@@ -47,6 +54,7 @@
         _module.args.pkgs = import nixpkgs {
           overlays = [
             emacs-overlay.overlay
+            self.overlays.default
           ];
           inherit system;
         };
@@ -69,9 +77,7 @@
             )
             gnumake
             graphviz
-            # FIXME: use the nightly (20240126) AppImage for now
-            # https://github.com/logseq/logseq/releases/tag/nightly
-            # logseq
+            logseq
             poppler_utils
             ripgrep
             (
