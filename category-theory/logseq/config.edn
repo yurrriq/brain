@@ -95,6 +95,7 @@
  ;; This option takes precedence over the local `logseq/custom.css` file.
  ;; Example usage:
  ;; :custom-css-url "@import url('https://cdn.jsdelivr.net/gh/dracula/logseq@master/custom.css');"
+ :custom-css-url "@import url('https://cdn.jsdelivr.net/gh/tzcl/logseq-monokai@main/custom.css');"
 
  ;; Specify a custom JS import.
  ;; This option takes precedence over the local `logseq/custom.js` file.
