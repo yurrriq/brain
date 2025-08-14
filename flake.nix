@@ -4,23 +4,18 @@
   inputs = {
     emacs-overlay = {
       inputs = {
-        flake-utils.follows = "flake-utils";
         nixpkgs.follows = "nixpkgs";
         nixpkgs-stable.follows = "nixpkgs-stable";
       };
       url = "github:nix-community/emacs-overlay";
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
-    flake-utils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/release-24.05";
-    pre-commit-hooks-nix = {
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        nixpkgs-stable.follows = "nixpkgs-stable";
-      };
+    git-hooks-nix = {
+      inputs.nixpkgs.follows = "nixpkgs";
       url = "github:cachix/git-hooks.nix";
     };
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/release-25.05";
     treefmt-nix = {
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:numtide/treefmt-nix";
@@ -31,20 +26,12 @@
     commit-lockfile-summary = "build(deps): nix flake update";
   };
 
-  outputs = inputs@{ emacs-overlay, flake-parts, nixpkgs, self, ... }:
+  outputs = inputs@{ emacs-overlay, flake-parts, nixpkgs, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
-        inputs.pre-commit-hooks-nix.flakeModule
+        inputs.git-hooks-nix.flakeModule
         inputs.treefmt-nix.flakeModule
       ];
-
-      flake.overlays.default = _final: prev: {
-        logseq = prev.logseq.override {
-          electron = prev.electron_30;
-        };
-        # FIXME: treefmt-nix doesn't seem to support v2 yet
-        treefmt = prev.treefmt1;
-      };
 
       systems = [
         "x86_64-linux"
@@ -54,7 +41,6 @@
         _module.args.pkgs = import nixpkgs {
           overlays = [
             emacs-overlay.overlay
-            self.overlays.default
           ];
           inherit system;
         };
@@ -62,7 +48,7 @@
         devShells.default = pkgs.mkShell {
           FONTCONFIG_FILE = pkgs.makeFontsConf {
             fontDirectories = [
-              (pkgs.nerdfonts.override { fonts = [ "Iosevka" ]; })
+              pkgs.nerd-fonts.iosevka
             ];
           };
           nativeBuildInputs = with pkgs; [
@@ -103,7 +89,6 @@
         };
 
         treefmt = {
-          projectRootFile = ./flake.nix;
           programs = {
             deadnix.enable = true;
             nixpkgs-fmt.enable = true;
