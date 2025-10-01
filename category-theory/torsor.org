@@ -1,0 +1,4 @@
+* A /*torsor*/ is like a [[group]] $G$ that has forgotten its [[monoid][identity element]], i.e., a [[free action][free]] and [[transitive action]] of $G$ on an [[inhabited set]] $T$.
+* Let $G$ be a [[group]], and let \(\underline{T}  = \left(T, a : G \times T \to T\right)\) be a $G$-torsor.
+* For some $t \in T$ and chosen [[monoid][identity element]] $id$, the following [[diagram]] is a [[pullback]] square, where $p_2$ is the canonical [[projection]] map $G \times T \to T$.
+* [[../assets/torsor-pullback.svg][diagram]]{:height 212, :width 392}

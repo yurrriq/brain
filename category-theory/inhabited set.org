@@ -1,0 +1,3 @@
+#+alias: nonempty set
+
+* An set is /*inhabited*/ if it contains an element, i.e, it is /*nonempty*/.

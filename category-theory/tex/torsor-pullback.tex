@@ -1,0 +1,13 @@
+\documentclass[crop,tikz,convert]{standalone}
+\usepackage{standalone}
+\standaloneconfig{convert={convertexe={convert}}}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+\pagecolor{white}
+\begin{document}
+\begin{tikzcd}
+  G\rar{id \times t}\dar[swap]{a \circ (id \times t)} &
+  {G \times T}\dar{a \times p_2} \\
+  T\rar{id \times t} & {T \times T}
+\end{tikzcd}
+\end{document}
