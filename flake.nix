@@ -51,6 +51,11 @@
               pkgs.nerd-fonts.iosevka
             ];
           };
+
+          inputsFrom = [
+            config.pre-commit.devShell
+          ];
+
           nativeBuildInputs = with pkgs; [
             (
               emacsWithPackagesFromUsePackage {
@@ -80,8 +85,6 @@
               }
             )
           ];
-
-          inherit (config.pre-commit.devShell) shellHook;
         };
 
         pre-commit.settings.hooks = {
