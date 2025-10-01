@@ -1,21 +1,49 @@
-on: [push]
+name: Publish Logseq SPA
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
-    name: Publish Logseq graph
     steps:
-      - uses: actions/checkout@v4
-      - uses: logseq/publish-spa@v0.3.0
+      - name: Checkout
+        uses: actions/checkout@v5
+      - id: pages
+        name: Configure Pages
+        uses: actions/configure-pages@v5
+      - uses: logseq/publish-spa@v0.3.1
         with:
           graph-directory: category-theory
           theme-mode: dark
-          version: 0.10.9
+          version: 0.10.12
       - name: Add a nojekyll file # to make sure asset paths are correctly identified
         run: touch $GITHUB_WORKSPACE/www/.nojekyll
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: www
+          path: www/
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
