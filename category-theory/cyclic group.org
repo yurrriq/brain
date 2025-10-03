@@ -1,4 +1,4 @@
-* A /*cyclic group*/ is a quotient group of the additive group of integers.
+* A /*cyclic group*/ is a quotient [[group]] of the additive [[group]] of integers.
 * Example: \(C_7 = \braket{a : a^7 = 1}\)
 ** \(a^5 \cdot a^4 = a^2 \leftrightsquigarrow 5 + 4 \equiv 2 \bmod 7 \)
 ** [[https://nathancarter.github.io/group-explorer/GroupInfo.html?groupURL=https://nathancarter.github.io/group-explorer/groups/Z_7.group][Group Explorer: $\mathbb{Z}_7$ - Cyclic group of order 7]]
