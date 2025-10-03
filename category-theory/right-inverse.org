@@ -2,4 +2,4 @@
 
 * A /*section*/ or /*right-[[inverse]]*/ of a [[morphism]] $f: X \to Y$ in a [[category]] is a
 [[morphism]] $s : Y \to X$, such that $fs = 1_Y$
-* [[../assets/right-inverse.svg]]
+* [[/assets/right-inverse.svg]]

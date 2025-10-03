@@ -1,5 +1,5 @@
 #+alias: associative
 
 * Given [[morphisms]] $f~:~A~\to~B$, $g~:~B~\to~C$, and $h~:~C~\to~D$, the following [[diagram]][fn:1] commutes.
-* [[../assets/category-associativity.svg][diagram]]{:height 196, :width 356}
+* [[/assets/category-associativity.svg][diagram]]{:height 196, :width 356}
 * [fn:1] Generated with [[https://www.ctan.org/pkg/tikz-cd][TiKZ]] and the [[https://poppler.freedesktop.org/][Poppler]] tool =pdftocairo=.
